@@ -1,4 +1,5 @@
 # Phishing URL Detector 🚨
+<img src="screenshots/phishing_home.png" alt="Home Page" width="400">
 
 ## 📌 Overview
 
