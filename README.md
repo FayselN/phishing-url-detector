@@ -23,7 +23,7 @@ The model is trained using **URL-based features only**, making it:
 
 ## 🧠 Model Details
 
-* Algorithm: (e.g., XGBoost / Random Forest)
+* Algorithm: XGBoost / LightGBM
 * Input: URL string
 * Output: Safe / Phishing
 * Feature Type: URL-based (no webpage scraping)
@@ -39,7 +39,11 @@ phishing-url-detector/
 ├── requirements.txt
 ├── README.md
 ├── model/
-│   └── model.pkl
+│   ├── xgboost_phishing_model.joblib
+│   ├── random_forest_phishing_model.joblib
+│   ├── lightgbm_phishing_model.joblib
+│   └── global_mean.pkl
+│   └── tld_phishing_rate.pkl
 ├── features/
 │   ├── feature_extractor.py
 │ 
