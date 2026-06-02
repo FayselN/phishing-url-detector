@@ -38,12 +38,20 @@ phishing-url-detector/
 ├── phishing_app.py
 ├── requirements.txt
 ├── README.md
+├── screenshots/
+|    |──phishing_home.png
+|    |──phishing_analysis.png
+|    |──phishing_results.png
+|
+|──assets/
+|    |──global_mean.pkl
+|    |──tld_phishing_rate.pkl
+|
 ├── model/
 │   ├── xgboost_phishing_model.joblib
 │   ├── random_forest_phishing_model.joblib
 │   ├── lightgbm_phishing_model.joblib
-│   └── global_mean.pkl
-│   └── tld_phishing_rate.pkl
+|
 ├── features/
 │   ├── feature_extractor.py
 │ 
@@ -72,7 +80,7 @@ source venv/bin/activate
 ### 3. Install dependencies
 
 ```bash
-pip install -r requirements.txt
+./venv/bin/python -m pip install -r requirements.txt
 ```
 
 ---
@@ -80,7 +88,7 @@ pip install -r requirements.txt
 ## ▶️ Run the App
 
 ```bash
-streamlit run app.py
+./venv/bin/python -m streamlit run phishing_app.py
 ```
 
 ---
